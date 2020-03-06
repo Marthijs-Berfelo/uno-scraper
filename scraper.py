@@ -45,5 +45,12 @@ print(result)
 
 
 
+json_result = result.to_json(orient='records')
+f = open('renault.json', 'w')
+f.write(json_result)
+f.close()
+
+
+
 
 
